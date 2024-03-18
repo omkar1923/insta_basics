@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="inst.css" />
+
+  </head>
+  <body>
+    <div class="nav-head">
+      <div class="nav">
+        <img
+          src="/Instagram-name-logo-transparent-PNG.png"
+          alt=""
+          width="180px"
+        />
+      </div>
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search" name="" id="" />
+      </div>
+
+      <div class="nav-icon">
+        <i class="far fa-compass"></i>
+        <i class="far fa-heart"></i>
+        <i class="far fa-user-circle"></i>
+        <i class="fas fa-sign-out-alt"></i>
+      </div>
+    </div>
+    <div class="mdiv" align="center">
+      <img
+        src="/Instagram-name-logo-transparent-PNG.png"
+        width="250px"
+        height="170px"
+        alt=""
+        class="logo"
+      />
+      <form action="" class="login">
+        <input
+          type="text"
+          name=""
+          id="usr"
+          placeholder="Phone, username or email"
+        />
+        <br /><br />
+        <input type="password" name="" id="pass" placeholder="Password" />
+        <br /><br />
+        <input type="submit" value="Enter" class="btn"  onclick="validate()" />
+      </form>
+      <br /><br />
+      <div class="line">
+        <span class="arrow"></span>
+        <span class="content">OR</span>
+        <span class="arrow"></span>
+      </div>
+      <!-- <br /> -->
+      <div class="social__icon">
+        <i class="fab fa-facebook-square" ></i>
+        <span><a href="/3rd/FBlogin_clone.html"> Log in with facebook </a></span>
+      </div>
+      <a href="#" class="forgetpassword"> Forget password?</a>
+    </div>
+    <div class="instagram"></div>
+
+    <div class="footer">
+      <p>Don't have an account? <span>Sign up</span></p>
+    </div>
+    <div class="appicon" align="center">
+      <span>Get this App</span>
+      <br /><br />
+      <img
+        src="/instagram-clone-login-page-master/img/apple-button.png"
+        alt=""
+        width="125px"
+      />
+      <img
+        src="/instagram-clone-login-page-master/img/googleplay-button.png"
+        alt=""
+        width="125px"
+      />
+    </div>
+    <script>
+      let usr1="Omkar";
+    let pass1="Omkar@123"
+    function validate(){
+        let usr2=document.getElementById("usr").value;
+        let pass2=document.getElementById("pass").value;
+
+        if(usr1===usr2 && pass1===pass2){
+            open("/3rd/insta_main.html");
+        }
+        else{
+            alert("please enter correct Credentials")
+        }
+    }
+    </script>
+  </body>
+</html>
